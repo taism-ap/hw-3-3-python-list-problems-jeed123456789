@@ -54,10 +54,13 @@ def sort(arr):
             index_right+=1
         return arr # return arr
 
-num = 10
-arr = []
+arr = [] # initialize empty list
+num = 10 # assign size of the list arr to num
+
+# create a randomized list
 for i in range(num):
     arr.append(randint(0,40))
-print("This is initial list:",arr)
-arr = sort(arr)
-print("This is sorted list:", arr)
+
+print("This is initial list:",arr) # print the initial list before sorting
+arr = sort(arr) # call the sort method and sort the list
+print("This is sorted list:", arr) # print the sorted list
